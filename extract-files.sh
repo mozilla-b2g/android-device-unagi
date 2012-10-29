@@ -241,7 +241,7 @@ copy_files "$COMMON_ETC" "system/etc" "etc"
 if [ ! -f "../../../Adreno200-AU_LINUX_ANDROID_ICS_CHOCO_CS.04.00.03.06.001.zip" ]; then
 	echo Adreno driver not found. Please download the "Adreno 2xx User-mode Android ICS Graphics Driver (ARMv7)" driver from
 	echo https://developer.qualcomm.com/mobile-development/mobile-technologies/gaming-graphics-optimization-adreno/tools-and-resources
-	echo and put the zip file in the top level B2G directory (you need to create an account in developer.qualcomm.com)
+	echo and put the zip file in the top level B2G directory.
 	exit -1
 fi
 
