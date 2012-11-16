@@ -1,6 +1,7 @@
 $(call inherit-product, device/qcom/common/common.mk)
 PRODUCT_COPY_FILES := \
   device/qcom/unagi/touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
+  device/qcom/unagi/touchscreen.idc:system/usr/idc/syna-touchscreen.idc \
   device/qcom/msm7627a/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
   device/qcom/unagi/media_profiles.xml:system/etc/media_profiles.xml
 
