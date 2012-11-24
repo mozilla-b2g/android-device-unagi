@@ -195,7 +195,6 @@ COMMON_LIBS="
 copy_files "$COMMON_LIBS" "system/lib" ""
 
 COMMON_BINS="
-	ATFWD-daemon
 	akmd8962_new
 	bridgemgrd
 	ext4check.sh
