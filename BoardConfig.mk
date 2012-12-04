@@ -2,6 +2,7 @@ include device/qcom/msm7627a/BoardConfig.mk
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true
+TARGET_RECOVERY_UI_LIB := librecovery_ui_fxos
 BOARD_KERNEL_PAGESIZE = 2048
 BOARD_KERNEL_SPARESIZE = 64
 
