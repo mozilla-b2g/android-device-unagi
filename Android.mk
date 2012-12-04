@@ -8,4 +8,4 @@ LOCAL_SRC_FILES    := init.unagi.rc
 LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
-include $(LOCAL_PATH)/recovery/Android.mk
+include $(call all-makefiles-under,$(LOCAL_PATH))
