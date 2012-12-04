@@ -31,13 +31,15 @@ else
 fi
 
 case "$DEVICE_BUILD_ID" in
-IMM76D*|OPENMASTER)
+IMM76D*)
   FIRMWARE=ICS
   echo Found ICS firmware with build ID $DEVICE_BUILD_ID >&2
   ;;
 *)
   FIRMWARE=unknown
   echo Found unknown firmware with build ID $DEVICE_BUILD_ID >&2
+  echo Please download a compatible backup-${DEVICE} directory.
+  echo Check the ${DEVICE} intranet page for information on how to get one.
   exit -1
   ;;
 esac
@@ -158,6 +160,7 @@ COMMON_LIBS="
 	libnv.so
 	libOmxAacDec.so
 	libOmxH264Dec.so
+	libOmxMpeg4Dec.so
 	libOmxMp3Dec.so
 	libOmxVidEnc.so
 	libOmxVp8Dec.so
@@ -192,7 +195,6 @@ COMMON_LIBS="
 copy_files "$COMMON_LIBS" "system/lib" ""
 
 COMMON_BINS="
-	ATFWD-daemon
 	akmd8962_new
 	bridgemgrd
 	ext4check.sh
