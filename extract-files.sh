@@ -143,6 +143,7 @@ copy_local_files()
 }
 
 COMMON_LIBS="
+	libaudioeq.so
 	libauth.so
 	libcm.so
 	libdiag.so
@@ -237,7 +238,7 @@ COMMON_ATH6K="
 	"
 copy_files "$COMMON_ATH6K" "system/etc/firmware/ath6k/AR6003/hw2.1.1" "wifi"
 
-COMMON_ETC="init.qcom.bt.sh gps.conf"
+COMMON_ETC="init.qcom.bt.sh gps.conf AudioFilter.csv"
 copy_files "$COMMON_ETC" "system/etc" "etc"
 
 if [ ! -f "../../../Adreno200-AU_LINUX_ANDROID_ICS_CHOCO_CS.04.00.03.06.001.zip" ]; then
